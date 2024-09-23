@@ -1,0 +1,12 @@
+file_format: "1"
+id: cardkeeb
+name: CardKeeb
+types: shield
+url: https://github.com/Palpatineli/cardkeeb
+requires: 
+  - pro_micro
+features:
+  - keys
+siblings:
+  - cardkeeb_left
+  - cardkeeb_right

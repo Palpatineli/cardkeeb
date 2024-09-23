@@ -1,0 +1,16 @@
+if SHIELD_CARDKEEB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Card Keeb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CARDKEEB_RIGHT || SHIELD_CARDKEEB_LEFT
+
+config ZMK_SPLIT
+    default y
+
+endif
