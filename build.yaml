@@ -20,5 +20,17 @@
 include:
   - board: nice_nano_v2
     shield: cardkeeb_left
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: cardkeeb_right
+    snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: settings_reset
+  - board: nice_nano_v2
+    shield: cardkeeb_left
+    cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+    artifact-name: cardkeeb_left_gallium
+  - board: nice_nano_v2
+    shield: cardkeeb_right
+    cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+    artifact-name: cardkeeb_right_gallium
