@@ -62,18 +62,18 @@
         // This is a sample keymap intended to be replaced with your own
         default_layer { // gallium homerow
             bindings = <
-                &kp X &kp Q       &kp M       &kp W        &kp Z     &kp J     &kp F        &kp O        &kp U       &kp COMMA
+                &kp B &kp L       &kp D       &kp C        &kp V     &kp J     &kp F        &kp O        &kp U       &kp COMMA
                 &kp N &lhm LALT R &hm LCTRL T &lhm LSHFT S &kp G     &kp Y     &rhm RSHFT H &rhm RCTRL A &rhm LALT E &kp I
-                &kp B &kp L       &kp D       &kp C        &kp V     &kp K     &kp P        &kp SQT      &kp SEMI    &kp DOT
-                                  &kp TAB     &mo_kp 2 ESC &kp SPACE &kp SPACE &mo_kp 1 RET &hm LGUI BSPC
+                &kp X &kp Q       &kp M       &kp W        &kp Z     &kp K     &kp P        &kp SQT      &kp SEMI    &kp DOT
+                                  &kp TAB     &mo_kp 2 ESC &kp SPACE &kp SPACE &mo_kp 1 RET &kp BSPC
             >;
         };
         function_layer {
             bindings = <
                 &kp F1   &kp F2   &kp F3    &kp F4       &kp F5    &kp F6    &kp F7           &kp F8           &kp F9        &kp F10
                 &kp N    &kp UP   &kp T     &kp S        &kp G     &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp PSCRN
-                &kp LEFT &kp DOWN &kp RIGHT &kp C        &td0      &to 0     &to 1            &kp SQT          &kp F11       &kp F12
-                                  &kp TAB   &mo_kp 2 ESC &kp SPACE &kp SPACE &kp RET          &kp BSPC
+                &kp LEFT &kp DOWN &kp RIGHT &kp C        &to 0     &to 1     &td0             &kp SQT          &kp F11       &kp F12
+                               &hm LGUI TAB &mo_kp 2 ESC &kp SPACE &kp SPACE &kp RET          &bootloader
             >;
         };
         number_layer {
@@ -81,7 +81,7 @@
                 &kp N1   &kp N2   &kp N3    &kp N4     &kp N5    &kp N6    &kp N7           &kp N8           &kp N9        &kp N0
                 &kp EXCL &kp UP   &kp LCTRL &kp LSHIFT &kp HASH  &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp AT
                 &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp PRCNT &kp CARET &kp AMPS         &kp STAR         &kp TILDE     &kp PIPE
-                                  &kp TAB   &kp ESC    &kp SPACE &kp SPACE &kp RET          &kp DEL
+                                &bootloader &kp ESC    &kp SPACE &kp SPACE &kp RET          &kp DEL
             >;
         };
     };

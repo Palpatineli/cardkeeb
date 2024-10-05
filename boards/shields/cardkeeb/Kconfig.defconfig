@@ -13,4 +13,8 @@ if SHIELD_CARDKEEB_RIGHT || SHIELD_CARDKEEB_LEFT
 config ZMK_SPLIT
     default y
 
+config ZMK_BLE
+    default y
+
+
 endif
