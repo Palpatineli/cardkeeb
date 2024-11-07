@@ -17,8 +17,8 @@
             bindings = <
                 &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
                 &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
-                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
-                                    &out OUT_BLE &bt BT_CLR &bootloader  &bootloader &bt BT_CLR  &out OUT_BLE
+                &kp Z     &kp X     &kp C     &kp V     &bt BT_CLR     &bt BT_CLR      &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                    &out OUT_BLE &bootloader  &bootloader &out OUT_BLE
             >;
         };
 
