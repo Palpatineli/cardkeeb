@@ -55,6 +55,18 @@
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&bt BT_CLR>, <&soft_off>;
         };
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&to 0>, <&to 1>;
+        };
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F12>, <&to 0>, <&to 1>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -62,18 +74,18 @@
         // This is a sample keymap intended to be replaced with your own
         default_layer { // gallium homerow
             bindings = <
-                &kp B &kp L       &kp D       &kp C        &kp V        &kp J        &kp F        &kp O        &kp U       &kp COMMA
+                &kp B &kp L       &kp D       &kp C        &kp V        &kp J        &kp F        &kp O        &kp U       &td1
                 &kp N &lhm LALT R &hm LCTRL T &lhm LSHFT S &kp G        &kp Y        &rhm RSHFT H &rhm RCTRL A &rhm LALT E &kp I
                 &kp X &kp Q       &kp M       &kp W        &kp Z        &kp K        &kp P        &kp SQT      &kp SEMI    &kp DOT
-                                              &kp SPACE    &mo_kp 2 TAB &mo_kp 1 RET &kp BSPC
+                                  &kp ESC     &mo_kp 2 TAB &kp SPACE    &kp SPACE    &mo_kp 1 RET &kp BSPC
             >;
         };
         function_layer {
             bindings = <
-                &kp F1   &kp F2   &kp F3    &kp F4         &kp F5       &kp F6    &kp F7           &kp F8           &kp F9        &kp F10
-                &kp N    &kp UP   &kp T     &kp S          &kp G        &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp PSCRN
-                &kp LEFT &kp DOWN &kp RIGHT &kp C          &to 0        &to 1     &td0             &kp SQT          &kp F11       &kp F12
-                                            &hm LGUI SPACE &mo_kp 2 TAB &kp RET   &bootloader
+                &kp F1   &kp F2   &kp F3    &kp F4       &kp F5    &kp F6    &kp F7           &kp F8           &kp F9        &td2
+                &kp LEFT &kp UP   &kp T     &kp S        &kp G     &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp PSCRN
+                &kp X    &kp DOWN &kp RIGHT &kp W        &kp Z     &kp K     &td0             &kp SQT          &kp F11       &kp F12
+                                  &kp LGUI  &mo_kp 2 TAB &kp SPACE &kp SPACE &kp RET          &kp BSPC
             >;
         };
         number_layer {
@@ -81,7 +93,7 @@
                 &kp N1   &kp N2   &kp N3    &kp N4      &kp N5    &kp N6    &kp N7           &kp N8           &kp N9        &kp N0
                 &kp EXCL &kp UP   &kp LCTRL &kp LSHIFT  &kp HASH  &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp AT
                 &kp LEFT &kp DOWN &kp RIGHT &kp DLLR    &kp PRCNT &kp CARET &kp AMPS         &kp STAR         &kp TILDE     &kp PIPE
-                                            &bootloader &kp TAB   &kp RET   &kp DEL
+                                  &kp ESC   &kp TAB     &kp SPACE &kp SPACE &kp RET          &kp DEL
             >;
         };
     };
@@ -132,10 +144,15 @@
             key-positions = <14 24>;
             bindings = <&kp GRAVE>;
         };
-        combo_esc {
-            timeout-ms = <40>;
-            key-positions = <31 32>;
-            bindings = <&kp ESC>;
+        combo_bootloader1 {
+            timeout-ms = <100>;
+            key-positions = <30 32>;
+            bindings = <&bootloader>;
+        };
+        combo_bootloader2 {
+            timeout-ms = <100>;
+            key-positions = <33 35>;
+            bindings = <&bootloader>;
         };
     };
 };
