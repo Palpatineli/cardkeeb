@@ -18,17 +18,25 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: cubekeeb_left
-  - board: nice_nano_v2
-    shield: cubekeeb_right
+  # - board: nice_nano_v2
+  #   shield: cubekeeb_left
+  # - board: nice_nano_v2
+  #   shield: cubekeeb_right
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: cubekeeb_left
-    cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+    shield: cardkeeb_left
+    cmake-args: -DKEYMAP_FILE=../../config/gallium34.keymap
     artifact-name: cardkeeb_left_gallium
   - board: nice_nano_v2
-    shield: cubekeeb_right
-    cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+    shield: cardkeeb_right
+    cmake-args: -DKEYMAP_FILE=../../config/gallium34.keymap
     artifact-name: cardkeeb_right_gallium
+  # - board: nice_nano_v2
+  #   shield: cubekeeb_left
+  #   cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+  #   artifact-name: cubekeeb_left_gallium
+  # - board: nice_nano_v2
+  #   shield: cubekeeb_right
+  #   cmake-args: -DKEYMAP_FILE=../../config/gallium36.keymap
+  #   artifact-name: cubekeeb_right_gallium
