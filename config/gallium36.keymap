@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp V>, <&bt BT_CLR>, <&soft_off>;
+            bindings = <&kp P>, <&bt BT_NXT>, <&bt BT_CLR>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
