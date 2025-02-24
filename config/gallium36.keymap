@@ -24,9 +24,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
@@ -35,9 +35,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp P>, <&bt BT_NXT>, <&bt BT_CLR>;
+            bindings = <&kp P>, <&bt BT_SEL 0>, <&bt BT_SEL 1>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F12>, <&to 0>, <&to 1>;
+            bindings = <&kp F10>, <&to 0>, <&to 1>;
         };
     };
     keymap {
@@ -91,8 +91,8 @@
         number_layer {
             bindings = <
                 &kp N1   &kp N2   &kp N3    &kp N4      &kp N5    &kp N6    &kp N7           &kp N8           &kp N9        &kp N0
-                &kp EXCL &kp UP   &kp LCTRL &kp LSHIFT  &kp HASH  &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp AT
-                &kp LEFT &kp DOWN &kp RIGHT &kp DLLR    &kp PRCNT &kp CARET &kp AMPS         &kp STAR         &kp TILDE     &kp PIPE
+                &kp LEFT &kp UP   &kp LCTRL &kp LSHIFT  &kp HASH  &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp AT
+                &kp EXCL &kp DOWN &kp RIGHT &kp DLLR    &kp PRCNT &kp CARET &kp AMPS         &kp STAR         &kp TILDE     &kp PIPE
                                   &kp ESC   &kp TAB     &kp SPACE &kp SPACE &kp RET          &kp DEL
             >;
         };
