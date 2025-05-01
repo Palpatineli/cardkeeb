@@ -1,0 +1,20 @@
+if SHIELD_SLIMKEEB_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Slim Keeb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SLIMKEEB_RIGHT || SHIELD_SLIMKEEB_LEFT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+
+endif

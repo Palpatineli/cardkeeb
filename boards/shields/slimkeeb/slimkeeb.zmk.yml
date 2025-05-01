@@ -1,0 +1,11 @@
+file_format: "1"
+id: slimkeeb
+name: SlimKeeb
+types: shield
+url: https://github.com/Palpatineli/cardkeeb
+requires: []
+features:
+  - keys
+siblings:
+  - slimkeeb_left
+  - slimkeeb_right
