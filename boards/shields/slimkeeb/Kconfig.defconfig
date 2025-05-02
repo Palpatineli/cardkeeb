@@ -10,6 +10,10 @@ endif
 
 if SHIELD_SLIMKEEB_RIGHT || SHIELD_SLIMKEEB_LEFT
 
+config CONFIG_NFCT_PINS_AS_GPIOS
+    bool
+    default y
+
 config ZMK_SPLIT
     default y
 

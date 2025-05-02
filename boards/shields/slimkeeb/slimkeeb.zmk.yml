@@ -3,7 +3,8 @@ id: slimkeeb
 name: SlimKeeb
 types: shield
 url: https://github.com/Palpatineli/cardkeeb
-requires: []
+requires:
+  - seeeduino_xiao_ble
 features:
   - keys
 siblings:
