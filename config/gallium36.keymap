@@ -6,8 +6,8 @@
     hold-time-ms = <5000>;
 };
 
-#define TAPPING_TERM 280
-#define QUICK_TAP_MS 175
+#define TAPPING_TERM 130
+#define QUICK_TAP_MS 150
 #define PRIOR_IDLE 150
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 // left hand
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 // right hand
@@ -29,10 +29,8 @@
             flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <PRIOR_IDLE>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R KEYS_THUMB>;
-            hold-trigger-on-release;
         };
         rhm: homerow_right {
             compatible = "zmk,behavior-hold-tap";
@@ -40,10 +38,8 @@
             flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <PRIOR_IDLE>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L KEYS_THUMB>;
-            hold-trigger-on-release;
         };
         mo_kp: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
