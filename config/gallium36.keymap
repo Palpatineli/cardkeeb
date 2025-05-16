@@ -6,7 +6,7 @@
     hold-time-ms = <5000>;
 };
 
-#define TAPPING_TERM 130
+#define TAPPING_TERM 220
 #define QUICK_TAP_MS 150
 #define PRIOR_IDLE 150
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 // left hand
