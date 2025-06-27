@@ -82,7 +82,7 @@
         function_layer {
             bindings = <
                 &kp F1   &kp F2   &kp F3    &kp F4       &kp F5    &kp F6    &kp F7           &kp F8           &kp F9        &td2
-                &kp LEFT &kp UP   &kp T     &kp S        &kp G     &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp PSCRN
+                &kp LEFT &kp UP   &kp T     &kp BSLH     &kp FSLH  &kp HOME  &rhm RSHFT PG_DN &rhm RCTRL PG_UP &rhm LALT END &kp PSCRN
                 &kp X    &kp DOWN &kp RIGHT &kp W        &kp Z     &kp K     &td0             &kp SQT          &kp F11       &kp F12
                                   &kp ESC  &mo_kp 2 TAB &kp SPACE &kp SPACE &kp RET          &kp BSPC
             >;
@@ -90,7 +90,7 @@
         number_layer {
             bindings = <
                 &kp N1   &kp N2   &kp N3    &kp N4      &kp N5    &kp N6    &kp N7          &kp N8           &kp N9        &kp N0
-                &kp LEFT &kp UP   &kp LCTRL &kp LSHIFT  &kp HASH  &kp LBKT  &rhm RSHFT LPAR &rhm RCTRL RPAR &rhm LALT RBKT &kp AT
+                &kp LEFT &kp UP   &lhm LCTRL MINUS &lhm LSHIFT EQUAL  &kp HASH  &kp LBKT  &rhm RSHFT LPAR &rhm RCTRL RPAR &rhm LALT RBKT &kp AT
                 &kp EXCL &kp DOWN &kp RIGHT &kp DLLR    &kp PRCNT &kp CARET &kp AMPS        &kp STAR         &kp TILDE     &kp PIPE
                                   &kp LGUI   &kp TAB     &kp SPACE &kp SPACE &kp RET         &kp DEL
             >;
@@ -98,26 +98,6 @@
     };
     combos {
         compatible = "zmk,combos";
-        combo_minus {
-            timeout-ms = <60>;
-            key-positions = <21 22>;
-            bindings = <&kp MINUS>;
-        };
-        combo_plus {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            bindings = <&kp EQUAL>;
-        };
-        combo_backslash {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp BSLH>;
-        };
-        combo_slash {
-            timeout-ms = <60>;
-            key-positions = <27 28>;
-            bindings = <&kp FSLH>;
-        };
         combo_grave {
             timeout-ms = <40>;
             key-positions = <14 24>;
