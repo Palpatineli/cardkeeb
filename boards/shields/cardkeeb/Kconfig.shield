@@ -1,4 +1,0 @@
-config SHIELD_CARDKEEB_LEFT
-    def_bool $(shields_list_contains,cardkeeb_left)
-config SHIELD_CARDKEEB_RIGHT
-    def_bool $(shields_list_contains,cardkeeb_right)
